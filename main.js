@@ -11,7 +11,36 @@ let mx = 0, my = 0, rx = 0, ry = 0;
 //document.querySelectorAll('a,button').forEach(el => { el.addEventListener('mouseenter', () => { cur.classList.add('h'); crng.classList.add('h'); }); el.addEventListener('mouseleave', () => { cur.classList.remove('h'); crng.classList.remove('h'); }); });
 document.documentElement.style.overflow = 'hidden';
 const cnt = { v: 0 };
-gsap.to(cnt, { v: 100, duration: 2.2, ease: 'power2.inOut', onUpdate() { const v = Math.round(cnt.v); document.getElementById('pp').textContent = v + '%'; document.getElementById('pf').style.height = v + '%'; }, onComplete() { setTimeout(() => { gsap.to('#pre', { yPercent: -100, duration: 1.2, ease: 'power4.inOut', onComplete() { const p = document.getElementById('pre'); if (p) p.remove(); document.documentElement.style.overflow = ''; gsap.to('#pg', { opacity: 1, duration: 0.5, onComplete: init }); } }); }, 300); } });
+//gsap.to(cnt, { v: 100, duration: 2.2, ease: 'power2.inOut', onUpdate() { const v = Math.round(cnt.v); document.getElementById('pp').textContent = v + '%'; document.getElementById('pf').style.height = v + '%'; }, onComplete() { setTimeout(() => { gsap.to('#pre', { yPercent: -100, duration: 1.2, ease: 'power4.inOut', onComplete() { const p = document.getElementById('pre'); if (p) p.remove(); document.documentElement.style.overflow = ''; gsap.to('#pg', { opacity: 1, duration: 0.5, onComplete: init }); } }); }, 300); } });
+
+gsap.to(cnt, { 
+    v: 100, 
+    duration: 2.2, 
+    ease: 'power2.inOut', 
+    onUpdate() { 
+        const v = Math.round(cnt.v); 
+        document.getElementById('pp').textContent = v + '%'; 
+        
+        // This moves the door from left: -100% to left: 0% as the counter hits 100
+        document.getElementById('pf').style.left = (-100 + v) + '%'; 
+    }, 
+    onComplete() { 
+        setTimeout(() => { 
+            gsap.to('#pre', { 
+                yPercent: -100, 
+                duration: 1.2, 
+                ease: 'power4.inOut', 
+                onComplete() { 
+                    const p = document.getElementById('pre'); 
+                    if (p) p.remove(); 
+                    document.documentElement.style.overflow = ''; 
+                    gsap.to('#pg', { opacity: 1, duration: 0.5, onComplete: init }); 
+                } 
+            }); 
+        }, 300); 
+    } 
+});
+
 function init() {
     gsap.registerPlugin(ScrollTrigger);
     document.querySelectorAll('nav .nl a[href^="#"]').forEach(a => { a.addEventListener('click', e => { const id = a.getAttribute('href'); if (id.length > 1) { e.preventDefault(); const t = document.querySelector(id); if (t) lenis.scrollTo(t, { offset: -88 }); } }); });

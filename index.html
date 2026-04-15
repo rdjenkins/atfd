@@ -24,13 +24,28 @@
 <body>
     <div class="cur" id="cur"></div>
     <div class="crng" id="crng"></div>
-    <div id="pre">
-        <div class="pdoor">
-            <div class="pfill" id="pf"></div>
-        </div>
-        <div style="display:flex;align-items:center;gap:16px"><span class="pname">All Things Fire Doors</span><span
-                class="ppct" id="pp">0%</span></div>
+<div id="pre">
+    <div class="pdoor">
+        <div class="pflame"></div>
+        <div class="pshut" id="pf"></div>
     </div>
+    
+    <div style="display:flex;align-items:center;gap:16px">
+        <span class="pname">All Things Fire Doors</span>
+        <span class="ppct" id="pp">0%</span>
+    </div>
+</div>
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+  <filter id="fire">
+    <feTurbulence type="fractalNoise" baseFrequency="0.01 0.07" numOctaves="3" seed="3">
+      <animate attributeName="baseFrequency" dur="5s" values="0.01 0.07;0.01 0.04;0.01 0.07" repeatCount="indefinite" />
+      <animate attributeName="seed" from="1" to="100" dur="20s" repeatCount="indefinite" />
+    </feTurbulence>
+    <feDisplacementMap in="SourceGraphic" scale="45" />
+  </filter>
+</svg>
+
     <div id="pg">
         <div class="tb">
             <div class="tbi">
