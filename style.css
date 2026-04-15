@@ -55,21 +55,54 @@ div[class*="wrapper"] {
     right: 0 !important
 }
 
-        @font-face {
-            font-family: 'Jura';
-            src: url('fonts/Jura-Light.ttf') format('truetype');
-            font-weight: 300;
-        }
-        @font-face {
-            font-family: 'Jura';
-            src: url('fonts/Jura-Regular.ttf') format('truetype');
-            font-weight: 400;
-        }
-        @font-face {
-            font-family: 'Jura';
-            src: url('fonts/Jura-Medium.ttf') format('truetype');
-            font-weight: 500;
-        }
+@font-face {
+    font-family: 'Jura';
+    src: url('fonts/Jura-Light.ttf') format('truetype');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Jura';
+    src: url('fonts/Jura-Regular.ttf') format('truetype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Jura';
+    src: url('fonts/Jura-Medium.ttf') format('truetype');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('fonts/WorkSans-Light.woff2') format('woff2');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('fonts/WorkSans-Regular.woff2') format('woff2');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('fonts/WorkSans-Medium.woff2') format('woff2');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('fonts/WorkSans-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('fonts/PlayfairDisplay-Italic.woff2') format('woff2');
+    font-weight: 400;
+    font-style: italic;
+}
 
 #pg {
     position: relative;
