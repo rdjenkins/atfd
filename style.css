@@ -57,19 +57,19 @@ div[class*="wrapper"] {
 
 @font-face {
     font-family: 'Jura';
-    src: url('fonts/Jura-Light.ttf') format('truetype');
+    src: url('fonts/Jura-Light.woff2') format('woff2');
     font-weight: 300;
 }
 
 @font-face {
     font-family: 'Jura';
-    src: url('fonts/Jura-Regular.ttf') format('truetype');
+    src: url('fonts/Jura-Regular.woff2') format('woff2');
     font-weight: 400;
 }
 
 @font-face {
     font-family: 'Jura';
-    src: url('fonts/Jura-Medium.ttf') format('truetype');
+    src: url('fonts/Jura-Medium.woff2') format('woff2');
     font-weight: 500;
 }
 

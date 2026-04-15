@@ -1,5 +1,6 @@
 setTimeout(() => { const p = document.getElementById('pre'); if (p) { p.remove(); document.documentElement.style.overflow = ''; document.getElementById('pg').style.opacity = '1'; } }, 6000);
-const lenis = new Lenis({ duration: 1.3, easing: t => Math.min(1, 1.001 - Math.pow(2, -10 * t)), smoothWheel: true });
+//const lenis = new Lenis({ duration: 1.3, easing: t => Math.min(1, 1.001 - Math.pow(2, -10 * t)), smoothWheel: true });
+const lenis = new Lenis({ autoRaf: true, autoToggle: true, anchors: true, allowNestedScroll: true, naiveDimensions: true, stopInertiaOnNavigate: true, duration: 1.3, easing: t => Math.min(1, 1.001 - Math.pow(2, -10 * t)), smoothWheel: true })
 gsap.ticker.add(t => lenis.raf(t * 1000));
 gsap.ticker.lagSmoothing(0);
 lenis.on('scroll', () => { if (window.ScrollTrigger) ScrollTrigger.update(); });
