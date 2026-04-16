@@ -16,6 +16,10 @@ body {
     background: #FAF7F1 !important
 }
 
+a {
+    color: inherit;
+}
+
 #page,
 #wrapper,
 #main,
@@ -1353,7 +1357,8 @@ footer {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr;
     gap: 56px;
-    margin-bottom: 48px
+    margin-bottom: 48px;
+    color: var(--mist);
 }
 
 .fl1 {
@@ -1380,7 +1385,6 @@ footer {
     font-size: var(--small);
     font-weight: 300;
     line-height: 1.75;
-    color: rgba(245, 242, 234, 0.26);
     margin-top: 16px
 }
 
@@ -1390,7 +1394,6 @@ footer {
     font-weight: 400;
     letter-spacing: .2em;
     text-transform: uppercase;
-    color: rgba(245, 242, 234, 0.45);
     margin-bottom: 20px
 }
 
@@ -1405,7 +1408,6 @@ footer {
     font-family: var(--fb);
     font-size: var(--small);
     font-weight: 300;
-    color: rgba(245, 242, 234, 0.26);
     text-decoration: none;
     transition: color .2s
 }
@@ -1427,10 +1429,10 @@ footer {
 
 .fb2 p {
     font-family: var(--fd);
-    font-size: var(--micro);
+    font-size: var(--small);
     font-weight: 300;
     letter-spacing: .1em;
-    color: rgba(245, 242, 234, 0.18)
+    color: var(--mist);
 }
 
 @media (max-width:1024px) {
