@@ -55,3 +55,43 @@ function init() {
     window.addEventListener('scroll', () => { const n = document.querySelector('.hnum'); if (n) n.style.transform = 'translateY(' + (scrollY * .13) + 'px)'; }, { passive: true });
     document.querySelectorAll('.bp,.bsub,.ncta').forEach(btn => { btn.addEventListener('mousemove', e => { const r = btn.getBoundingClientRect(); gsap.to(btn, { x: (e.clientX - r.left - r.width / 2) * .13, y: (e.clientY - r.top - r.height / 2) * .17, duration: .4, ease: 'power2.out' }); }); btn.addEventListener('mouseleave', () => { gsap.to(btn, { x: 0, y: 0, duration: .7, ease: 'elastic.out(1,.5)' }); }); });
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    const contactForm = document.getElementById('contact_form');
+    const errorDiv = document.getElementById('form-error');
+
+    contactForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        
+        // Clear any previous error messages
+        errorDiv.style.display = 'none';
+        errorDiv.textContent = '';
+
+        const formData = new FormData(contactForm);
+        const data = Object.fromEntries(formData.entries());
+
+        try {
+            const response = await fetch('https://allthingsfiredoors.com/rvp.php', {
+                method: 'POST',
+                body: JSON.stringify(data)
+            });
+
+            if (response.ok) {
+                // SUCCESS: Replace the entire form content
+                contactForm.innerHTML = `
+                    <div class="success-message" style="padding: 40px; text-align: center;">
+                        <h2 style="color: #2c3e50;">Thank You!</h2>
+                        <p>Your request has been received. We'll be in touch.</p>
+                    </div>
+                `;
+            } else {
+                throw new Error('Server error. Please try again later.');
+            }
+        } catch (error) {
+            // ERROR: Show the error message below the button
+            console.error('Submission Error:', error);
+            errorDiv.textContent = "Sorry, there was a problem sending your request. Please check your connection.";
+            errorDiv.style.display = 'block';
+        }
+    });
+});
