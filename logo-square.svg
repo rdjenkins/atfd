@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   viewBox="0 0 320 96"
+   viewBox="0 0 320 320"
    width="320"
-   height="96"
+   height="320"
    version="1.1"
    id="svg5"
-   sodipodi:docname="logo.svg"
+   sodipodi:docname="logo-square.svg"
    inkscape:version="1.4.3 (0d15f750, 2025-12-25)"
+   inkscape:export-filename="logo-square.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -20,15 +23,15 @@
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
-     inkscape:zoom="1.3567124"
-     inkscape:cx="178.00382"
-     inkscape:cy="53.069462"
-     inkscape:window-width="1153"
-     inkscape:window-height="637"
+     inkscape:zoom="1.5754496"
+     inkscape:cx="147.89429"
+     inkscape:cy="160.27171"
+     inkscape:window-width="1197"
+     inkscape:window-height="708"
      inkscape:window-x="0"
      inkscape:window-y="25"
      inkscape:window-maximized="0"
-     inkscape:current-layer="layer1" />
+     inkscape:current-layer="svg5" />
   <defs
      id="defs1">
     <style
@@ -61,15 +64,15 @@
      id="layer1"
      inkscape:label="Background">
     <rect
-       style="fill:#faf7f1;fill-opacity:1;stroke-width:0.988365"
+       style="fill:#faf7f1;fill-opacity:1;stroke-width:1.45576"
        id="rect23"
-       width="320.26459"
-       height="95.764557"
+       width="320"
+       height="320"
        x="-0.047140319"
-       y="0.28292239" />
+       y="2.8873136" />
   </g>
   <g
-     transform="translate(12, 12)"
+     transform="matrix(1.9323288,0,0,1.9323288,118.60268,23.443119)"
      id="g3"
      inkscape:label="door">
     <!-- Door frame -->
@@ -106,7 +109,7 @@
        y1="76"
        x2="48"
        y2="76"
-       stroke="#AF8C38"
+       stroke="#af8c38"
        stroke-width="1.5"
        opacity="0.55"
        id="line3"
@@ -115,29 +118,30 @@
   <!-- Vertical divider -->
   <line
      class="divider"
-     x1="78"
-     y1="24"
-     x2="78"
-     y2="72"
+     x1="127.18213"
+     y1="70.084091"
+     x2="127.18213"
+     y2="129.48566"
      id="line4"
-     inkscape:label="spacer line" />
+     inkscape:label="spacer line"
+     style="display:none" />
   <text
      class="wordmark-secondary"
-     x="92"
-     y="68"
+     x="11.933931"
+     y="302.44736"
      id="text5"
      inkscape:label="Fire Doors"
-     style="font-weight:300;font-size:18px;font-family:Jura, 'Helvetica Neue', sans-serif;letter-spacing:0.9px;fill:#c6a24b"><tspan
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:21.3333px;font-family:Jura, 'Helvetica Neue', sans-serif;-inkscape-font-specification:'Jura, Helvetica Neue, sans-serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+     style="font-weight:300;font-size:47.1598px;font-family:Jura, 'Helvetica Neue', sans-serif;letter-spacing:2.35799px;fill:#c6a24b;stroke-width:2.61998"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:55.8931px;font-family:Jura, 'Helvetica Neue', sans-serif;-inkscape-font-specification:'Jura, Helvetica Neue, sans-serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:2.61998"
        id="tspan6">Fire Doors</tspan></text>
   <!-- Wordmark -->
   <text
      class="wordmark-primary"
-     x="92"
-     y="42"
+     x="11.917288"
+     y="235.14503"
      id="text4"
      inkscape:label="All Things"
-     style="font-weight:300;font-size:22px;font-family:Jura, 'Helvetica Neue', sans-serif;letter-spacing:1.6px;text-transform:uppercase;fill:#0a1432"><tspan
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22px;font-family:Jura, 'Helvetica Neue', sans-serif;-inkscape-font-specification:'Jura, Helvetica Neue, sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+     style="font-weight:300;font-size:59.4154px;font-family:Jura, 'Helvetica Neue', sans-serif;letter-spacing:4.32111px;text-transform:uppercase;fill:#0a1432;stroke-width:2.7007"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:59.4154px;font-family:Jura, 'Helvetica Neue', sans-serif;-inkscape-font-specification:'Jura, Helvetica Neue, sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:2.7007"
        id="tspan5">All Things</tspan></text>
 </svg>
