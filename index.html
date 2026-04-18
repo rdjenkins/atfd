@@ -285,17 +285,17 @@
                         <div class="ftit">Request Free Consultation</div>
                         <p class="fsub">We will get back to you within 2 hours during business hours.</p>
                         <div class="fr">
-                            <div class="fg"><label>First Name</label><input type="text" placeholder="John"></div>
-                            <div class="fg"><label>Last Name</label><input type="text" placeholder="Smith"></div>
+                            <div class="fg"><label>First Name</label><input name="firstname" type="text" placeholder="John"></div>
+                            <div class="fg"><label>Last Name</label><input name="surnname" type="text" placeholder="Smith"></div>
                         </div>
-                        <div class="fg"><label>Company or Organisation</label><input type="text" placeholder="Optional">
+                        <div class="fg"><label>Company or Organisation</label><input name="organisation" type="text" placeholder="Optional">
                         </div>
                         <div class="fr">
-                            <div class="fg"><label>Phone</label><input type="tel" placeholder="07700 000 000"></div>
-                            <div class="fg"><label>Email</label><input type="email" placeholder="john@company.co.uk">
+                            <div class="fg"><label>Phone</label><input name="telephone" type="tel" placeholder="07700 000 000"></div>
+                            <div class="fg"><label>Email</label><input name="email" type="email" placeholder="john@company.co.uk">
                             </div>
                         </div>
-                        <div class="fg"><label>Service Required</label><select>
+                        <div class="fg"><label>Service Required</label><select name="service">
                                 <option value="">Select a service...</option>
                                 <option>Fire Door Inspection</option>
                                 <option>Fire Door Installation</option>
@@ -304,7 +304,7 @@
                                 <option>Not sure, need advice</option>
                             </select></div>
                         <div class="fg"><label>Brief Details</label><textarea
-                                placeholder="Number of doors, building type, location..."></textarea></div><button
+                                name="details" placeholder="Number of doors, building type, location..."></textarea></div><button
                             class="bsub"><span>Request Free Consultation</span></button>
                     </div>
                 </div>
